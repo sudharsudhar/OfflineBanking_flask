@@ -1,5 +1,6 @@
 # OfflineBanking_flask
-FlaskBanking based on Mini-Internet Banking
+FlaskBanking based on Mini-Internet Banking 
+A FlaskBanking application with user authentication, Using Flask, sqlalchemy connected to sqlite Database.
 
 ## Contact Me for further development,Any help(Regarding this project),Any error....
 - ###### Name: Sudharsan S
