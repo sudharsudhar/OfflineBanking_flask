@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% extends "base.html" %}
+{% block content %}
+    <meta charset="UTF-8">
+    <title>Welcome to homepage</title>
+<body>
+
+      <div class="btn btn-primary btn-lg">
+
+        <h3>Account Holder Name: {{vv}}</h3>
+        <h3>Account Holder Email: {{ss}}</h3>
+        <h3>Account Holder Number: {{ll}}</h3>
+        <h3>Account Holder Balance: {{ba}}</h3>
+
+            </div>
+
+
+
+      </p>
+
+<!--
+      <form method="post" action="/withdrawal">
+    <p>
+        <label for="withdrawal">Withdrawal Amount</label>
+        <input id="withdrawal" name="WITHDRAWAL" type="number" placeholder="Enter The Amount TO DEPOSIT">
+        <br><input type="submit" value="CLICK TO DEPOSIT YOUR AMOUNT">
+
+    </p>
+        </form>
+
+     <form method="post" action="/deposit">
+    <p>
+        <label for="deposit">Deposit Amount</label>
+        <input id="deposit" name="DEPOSIT" type="number" placeholder="Enter The Amount TO DEPOSIT">
+        <br><input type="submit" value="CLICK TO DEPOSIT YOUR AMOUNT">
+
+    </p>
+        </form>
+    <h2>{{alert}}</h2>-->
+    <!-- Button trigger modal -->
+<!--<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+TRANSATION HISTORY
+</button>-->
+
+
+      <!--
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Your Main Balance {{ba}}</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+
+        Want to see Your full Transation History
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <a href="/transhistroy" button type="button" class="btn btn-primary">View Full History</button></a>
+
+      </div>
+    </div>
+  </div>
+</div>-->
+
+
+{% endblock %}
+</body>
+</html>

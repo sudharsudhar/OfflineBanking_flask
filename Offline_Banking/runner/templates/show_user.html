@@ -1,0 +1,197 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% extends "base.html" %}
+{% block content %}
+
+
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title> show_user_cvbnm,,,,,,,,,,,,,,,,,,,,,,,,sjjjjjjjjjjjx </title>
+    <link rel="icon" type="image/gif/png" href="static/front.jpg">
+</head>
+<body>
+
+
+
+<p class="text-primary"><h1>show_user</h1></p>
+<div class="p-3 mb-2 bg-success text-white">
+
+<h1>show_user</h1>
+<h2>show_user</h2>
+<h1>{{specific}}</h1>
+<h1>{{display}}</h1>
+<h1>{{specific2}}</h1>
+<h1>{{alert}}</h1>
+    <h1>{{name}}</h1>
+    <h1>{{amo}}</h1>
+    <h1>{{phone}}</h1>
+<h1>{{trans}}</h1>
+
+    <h1>-----</h1>
+
+
+    <h1>-------</h1>
+
+    <h1>{{acc}}</h1>
+         <h1>{{acc_holder_name}}</h1>
+          <h1>{{acc_email}}</h1>
+         <h1>{{acc_numb}}</h1>
+
+    <h1>{{name2}}</h1>
+
+    <h1>{{ss}}</h1>
+    <h1>{{vv}}</h1>
+    <h1>{{ll}}</h1>
+    <h1>{{balance}}</h1>
+    <h1>{{ba}}</h1>
+        <h1>{{message}}</h1>
+    <h1>{{vvv}}</h1>
+    <h1>{{kl}}</h1>
+    <h1>{{ll}}</h1>
+
+
+   <ol>
+<!-- For loop logic of jinja template -->
+{%for i in range(0, len)%}
+
+    <li>{{trans[i]}} {{trans[i+1]}} {{trans[i+2]}}</li>
+{%endfor%}
+   </ol>
+
+    <table style="margin-left: 20px;">
+<!-- Table headers -->
+    <th>
+        <tr style="color: green; ">
+        <td>Serial Number</td>
+        <td>Pokemon Name</td>
+</tr>
+    </th>
+
+<!-- For loop logic of jinja template -->
+{%for i in range(0, len)%}
+
+<!-- table rows -->
+<tr>
+    <td>{{i}}</td>
+    <td>{{trans[i]}}</td>
+
+{%endfor%}
+
+</tr>
+
+</table>
+
+<h1>{{keyvalue1}}</h1>
+
+
+
+
+<h1>{{CountryCodeDict1}}</h1>
+
+
+    <h1>##############################</h1>
+
+    <ol>
+<!-- For loop logic of jinja template -->
+{%for i in range(0, leen)%}
+
+    <li>{{keyvalue1[i]}} </li>
+{%endfor%}
+   </ol>
+    <h1>##############################</h1>
+
+
+
+    </div>
+<button type="button" class="btn btn-info"><h1>{{trans_details}}</h1></button>
+
+<div class="p-3 mb-2 bg-warning text-dark"><h1>{{trans_details}}</h1></div>
+<br><h1>Nebalance Amount : <div class="btn btn-primary btn-lg">{{Newbalance}}</div></h1>
+<br>
+
+<span class="align-baseline">
+<div id="carouselExampleIndicators" class="carousel slide" class="btn-group-vertical"data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner"data-interval="500">
+    <div class="carousel-item active"data-interval="500">
+      <img src="static/thumb_19330.jpg" class="d-block w-10" alt="namee">
+    </div>
+    <div class="carousel-item"data-interval="500">
+      <img src="static/thumb_29649.jpg" class="d-block w-10" alt="mae">
+    </div>
+    <div class="carousel-item"data-interval="500">
+      <img src="static/thumb_40908.jpg" class="d-block w-10" alt="name">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</span>
+
+
+
+
+<br>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<p class="text-primary"><h1>show_user</h1></p>
+<p class="text-muted">.text-muted</p>
+
+
+         <form method="post" action="/withdrawal">
+<p>
+        <label for="amount">Withdrawal Amount</label>
+        <input id="amount" name="AMOUNT" type="number" placeholder="Enter The Amount">
+        <br><input type="submit" value="Withdrawal Your Amount">
+
+    </p>
+        </form>
+
+<marquee align = "left" behavior="scroll" direction="up">
+    <img src="static/thumb_40908.jpg" width="250" height="250" alt="Natural" /><br>
+    <img src="static/thumb_29649.jpg" width="250" height="250" alt="Natural" /><br>
+    <img src="static/thumb_19330.jpg" width="250" height="250" alt="Natural" /><br>
+  </marquee>
+
+<TABLE WIDTH=100%>
+<TR>
+<TD><MARQUEE behavior="scroll" direction="up">
+    <img src="static/thumb_40908.jpg" width="400" height="400" alt="Natural" /><br>
+    <img src="static/thumb_29649.jpg" width="400" height="400" alt="Natural" /><br>
+    <img src="static/thumb_19330.jpg" width="400" height="400" alt="Natural" /><br></MARQUEE></TD>
+<TD>
+<h1 style="text-align:center;">Centered Heading</h1></TD>
+
+<TD><MARQUEE behavior="scroll" direction="down">
+    <img src="static/thumb_40908.jpg" width="400" height="400" alt="Natural" /><br>
+    <img src="static/thumb_29649.jpg" width="400" height="400" alt="Natural" /><br>
+    <img src="static/thumb_19330.jpg" width="400" height="400" alt="Natural" /><br></MARQUEE></TD>
+</TR>
+</TABLE>
+
+
+
+
+
+<h1>Test</h1>
+<div class="p-3 mb-2 bg-warning text-dark"><h1>{{trans_details}}</h1></div>
+{% endblock %}
+
+</body>
+</html>

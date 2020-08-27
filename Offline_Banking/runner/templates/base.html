@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/png" href="static/front.jpg" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#"><img src="https://img.icons8.com/color/64/000000/bank-building.png"/>{{session['uname']}} </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	     <span class="navbar-toggler-icon"></span>
+	 </button>
+         <div class="collapse navbar-collapse" id="navbarNav">
+             <ul class="navbar-nav">
+	         <li class="nav-item active">
+                     <a class="nav-link" href="/returnpage">Home <span class="sr-only">(current)</span></a>
+		</li>
+		<li class="nav-item">
+		    <a class="nav-link" href="/features">Features</a>
+		</li>
+		<li class="nav-item">
+		    <a class="nav-link" href="#">Pricing</a>
+		</li>
+		<li class="nav-item">
+		    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+		</li>
+	    </ul>
+        </div>
+        <br>
+
+
+
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">
+  <div  class="btn btn-primary btn-lg active" role="button" aria-pressed="true"><img src="https://img.icons8.com/dotty/24/000000/exit.png"/>Log_Out</div>
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">LogOut Window</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <h3>Are u sure want to logout?</h3>
+
+      </div>
+      <div class="modal-footer">
+
+            <a href="/logout" class="btn btn-primary btn-lg active" role="button" aria-pressed="true"><img src="https://img.icons8.com/dotty/24/000000/exit.png"/>Log_Out</a>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+        <br>
+    </nav>
+    <marquee>Welcomee!!!</marquee>
+    <div class="mx-auto" style="width: 300px;">
+<div class="btn btn-primary btn-lg">Welcome to OFFLINE BANKING</div>
+</div>
+
+
+    <h1>-----------------------------------------------------------------------------------</h1>
+
+    <p>
+  <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1"> <img src="https://img.icons8.com/doodle/48/000000/money.png"/>Cash Withdrawal</a>
+  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Cash<img src="https://img.icons8.com/fluent/48/000000/deposit.png"/> Deposit</button>
+  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2"><img src="https://img.icons8.com/office/40/000000/online-money-transfer.png"/>Money Transfer</button>
+</p>
+<div class="row">
+  <div class="col">
+    <div class="collapse multi-collapse" id="multiCollapseExample1">
+      <div class="card card-body">
+
+         <form method="post" action="/withdrawal">
+    <p>
+        <label for="withdrawal">Withdrawal Amount</label>
+        <input id="withdrawal" name="WITHDRAWAL" type="number" placeholder="Enter The Amount TO DEPOSIT">
+        <br><input type="submit" value="CLICK TO Withdrawal YOUR AMOUNT">
+
+    </p>
+        </form>
+
+
+
+
+
+
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="collapse multi-collapse" id="multiCollapseExample2">
+      <div class="card card-body">
+
+          <form method="post" action="/deposit">
+    <p>
+        <label for="deposit">Deposit Amount</label>
+        <input id="deposit" name="DEPOSIT" type="number" placeholder="Enter The Amount TO DEPOSIT">
+        <br><input type="submit" value="CLICK TO DEPOSIT YOUR AMOUNT">
+
+    </p>
+        </form>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+    <p style="text-align:right;">
+
+
+
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+TRANSATION HISTORY
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Your Main Balance {{ba}}</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+
+        Want to see Your full Transation History
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <a href="/transhistroy" button type="button" class="btn btn-primary">View Full History</button></a>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+    </p>
+
+<h1>-----------------------------------------------------------------------------------</h1>
+    {% block content %}
+    {% endblock %}
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

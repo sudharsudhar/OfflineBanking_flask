@@ -1,0 +1,67 @@
+
+.main-head{
+    text-align: center;
+    color: white;
+    background: #a3d5d3;
+    padding: .5px;
+    margin-top: .1px
+
+    }
+
+.main-head2{
+    text-align: center;
+    border: solid white 3px;
+    /*border-radius: 0px;*/
+    color: white;
+    margin-top: .1px
+    }
+
+.card {
+  margin: 30px;
+  padding: 20px 40px 40px;
+  max-width: 200px;
+  text-align: left;
+  background: deepskyblue;
+  border-bottom: 4px solid #ccc;
+  border-radius: 6px;
+}
+
+.skills {
+    padding: 0;
+    text-align: center;
+    box-sizing: content-box
+    border-radius: 8px;
+}
+
+.card-reg {
+  margin: 30px;
+  padding: 20px 40px 40px;
+  max-width: 500px;
+  text-align: left;
+  background: deepskyblue;
+  border-bottom: 4px solid #ccc;
+  border-radius: 6px;
+}
+
+.inputreg {
+    width: 480px;
+    background: #FAFAFA none repeat scroll 0 0;
+    border: 1px solid #999999;
+    height: 18px;
+    margin-left: 10px;
+    display: inline;
+}
+
+a {
+    transition: color linear 0.4s;
+    text-decoration: none;
+    background-color: transparent;
+    color: #de00a5;
+}
+
+.body {
+  background-image: url('front.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
